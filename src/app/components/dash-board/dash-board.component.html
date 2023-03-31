@@ -1,0 +1,70 @@
+<div class="mx-auto">
+    <div class="columns-3 border-b-2 gap-10 border-neutral-100 py-3 dark:border-neutral-600">
+        <!-- card template -->
+        <div class="justify-center" *ngFor="let data of cardData">
+            <a 
+                [routerLink]="[data.routeLink]"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+            <div                
+                class="block max-w-sm rounded-lg bg-white text-center shadow-lg dark:bg-neutral-700">
+                <div
+                class="border-b-2 border-neutral-100 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50">
+                <!-- Featured -->
+                </div>
+                <div class="p-6">
+                    <div class="max-w-sm w-full lg:max-w-full lg:flex gap-10 columns-2 justify-center">
+                        <div class="flex">
+                            <i class="fa-3x my-icons" [class]="data.icon"></i>
+                        </div>
+                        <div class="block">
+                            <p class="text-base text-neutral-600 dark:text-neutral-200">
+                                {{ data.title }}
+                            </p><br>
+                            <h5
+                                class="text-2xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                {{ data.total }}
+                            </h5> 
+                        </div>
+                    </div>           
+                </div>
+                <div
+                class="border-t-2 border-neutral-100 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50">
+                <i class="fa fa-calendar-check-o px-6 my-icons" aria-hidden="true">&#xf133;</i>
+                {{ data.timeline }}
+                </div>
+            </div>
+            </a>
+        </div>
+        <!--end of card template -->
+        
+    </div>
+
+    <div
+        class="relative flex flex-col min-w-0 break-words w-full mb-6 rounded bg-blueGray-700"
+    >
+    <div class="rounded-t mb-0 px-4 py-3 bg-dark">
+        <div class="flex flex-wrap items-center">
+        <div class="relative w-full max-w-full flex-grow flex-1">
+            <h6 class="uppercase text-blueGray-100 mb-1 text-xl font-semibold">
+            Loan Application Summary
+            </h6>
+            <h2 class="text-dark text-sm font-semibold">
+            loan approvals
+            </h2>
+        </div>
+        </div>
+    </div>
+    <div class="columns-2">
+        <div class="chart-container max-w-md rounded-lg bg-white text-center shadow-lg dark:bg-neutral-700 p-8 h-60">
+            <canvas  id="MyChart" >{{ chart }}</canvas>
+        </div>
+        <div class="chart-container max-w-md rounded-lg bg-white text-center shadow-lg dark:bg-neutral-700 p-8 h-60">
+            <canvas  id="MyPie" >{{ pie }}</canvas>
+        </div>
+    </div>
+    
+</div>
+
+</div>
