@@ -1,1 +1,240 @@
-<p>branch works!</p>
+<div class="container">
+    <app-title-head 
+        [titleHead] = "titleHead"
+        (btnClick)="toggleAddBranch()"
+        [buttonName]="buttonHeadName"></app-title-head>
+
+    <!-- tables -->
+    
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg mb-6 mt-6">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Branch name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Location
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Contact Person
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Capacity
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Apple MacBook Pro 17"
+                    </th>
+                    <td class="px-6 py-2">
+                        Silver
+                    </td>
+                    <td class="px-6 py-2">
+                        Laptop
+                    </td>
+                    <td class="px-6 py-2">
+                        $2999
+                    </td>
+                    <td class="px-6 py-2">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Microsoft Surface Pro
+                    </th>
+                    <td class="px-6 py-2">
+                        White
+                    </td>
+                    <td class="px-6 py-2">
+                        Laptop PC
+                    </td>
+                    <td class="px-6 py-2">
+                        $1999
+                    </td>
+                    <td class="px-6 py-2">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Magic Mouse 2
+                    </th>
+                    <td class="px-6 py-2">
+                        Black
+                    </td>
+                    <td class="px-6 py-2">
+                        Accessories
+                    </td>
+                    <td class="px-6 py-2">
+                        $99
+                    </td>
+                    <td class="px-6 py-2">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Google Pixel Phone
+                    </th>
+                    <td class="px-6 py-2">
+                        Gray
+                    </td>
+                    <td class="px-6 py-2">
+                        Phone
+                    </td>
+                    <td class="px-6 py-2">
+                        $799
+                    </td>
+                    <td class="px-6 py-2">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Apple Watch 5
+                    </th>
+                    <td class="px-6 py-2">
+                        Red
+                    </td>
+                    <td class="px-6 py-2">
+                        Wearables
+                    </td>
+                    <td class="px-6 py-2">
+                        $999
+                    </td>
+                    <td class="px-6 py-2">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Apple MacBook Pro 17"
+                    </th>
+                    <td class="px-6 py-2">
+                        Silver
+                    </td>
+                    <td class="px-6 py-2">
+                        Laptop
+                    </td>
+                    <td class="px-6 py-2">
+                        $2999
+                    </td>
+                    <td class="px-6 py-2">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Microsoft Surface Pro
+                    </th>
+                    <td class="px-6 py-2">
+                        White
+                    </td>
+                    <td class="px-6 py-2">
+                        Laptop PC
+                    </td>
+                    <td class="px-6 py-2">
+                        $1999
+                    </td>
+                    <td class="px-6 py-2">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Magic Mouse 2
+                    </th>
+                    <td class="px-6 py-2">
+                        Black
+                    </td>
+                    <td class="px-6 py-2">
+                        Accessories
+                    </td>
+                    <td class="px-6 py-2">
+                        $99
+                    </td>
+                    <td class="px-6 py-2">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr class="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Google Pixel Phone
+                    </th>
+                    <td class="px-6 py-2">
+                        Gray
+                    </td>
+                    <td class="px-6 py-2">
+                        Phone
+                    </td>
+                    <td class="px-6 py-2">
+                        $799
+                    </td>
+                    <td class="px-6 py-2">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        Apple Watch 5
+                    </th>
+                    <td class="px-6 py-2">
+                        Red
+                    </td>
+                    <td class="px-6 py-2">
+                        Wearables
+                    </td>
+                    <td class="px-6 py-2">
+                        $999
+                    </td>
+                    <td class="px-6 py-2">
+                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- newbranch form -->
+    <app-new-branch-form
+        (cancelled)="closeDialog()"
+        *ngIf="showAddBranchForm"
+    ></app-new-branch-form>
+
+    <!-- pagination -->
+    <div class="flex justify-center">
+        <nav aria-label="Page navigation example">
+            <ul class="inline-flex -space-x-px">
+            <li>
+                <a href="#" class="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
+            </li>
+            <li>
+                <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+            </li>
+            <li>
+                <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+            </li>
+            <li>
+                <a href="#" aria-current="page" class="px-3 py-2 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+            </li>
+            <li>
+                <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+            </li>
+            <li>
+                <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+            </li>
+            <li>
+                <a href="#" class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
+            </li>
+            </ul>
+        </nav>
+    </div>
+</div>

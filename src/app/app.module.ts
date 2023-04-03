@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import { LoansComponent } from './components/loans/loans.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BodyComponent } from './components/body/body.component';
+import { TitleHeadComponent } from './components/title-head/title-head.component';
+import { NewBranchFormComponent } from './components/new-branch-form/new-branch-form.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +22,13 @@ import { BodyComponent } from './components/body/body.component';
     BranchComponent,
     LoansComponent,
     CustomerComponent,
-    BodyComponent
+    BodyComponent,
+    TitleHeadComponent,
+    NewBranchFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FontAwesomeModule
+    AppRoutingModule, FontAwesomeModule, MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
